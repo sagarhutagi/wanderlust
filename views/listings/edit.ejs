@@ -4,7 +4,7 @@
     <form action="/listings/<%= listing._id %>?_method=PUT" method="post"><br><br>
         <input type="text" name="title" id="title" placeholder="title" value="<%=listing.title%>"><br><br>
         <input type="textarea" name="description" id="description" placeholder="description" value="<%=listing.description%>"><br><br>
-        <input type="text" name="image" id="image" placeholder="image" value="<%=listing.image%>"><br><br>
+        <input type="text" name="image" id="image" placeholder="image" value="<%=listing.image.url%>"><br><br>
         <input type="text" name="price" id="price" placeholder="price" value="<%=listing.price%>"><br><br>
         <input type="text" name="location" id="location" placeholder="location" value="<%=listing.location%>"><br><br>
         <input type="text" name="country" id="country" placeholder="country" value="<%=listing.country%>"><br><br>
